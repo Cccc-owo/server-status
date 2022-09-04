@@ -14,6 +14,10 @@ export default defineUserConfig({
         link: '/',
       },
       {
+        text: '状态检测',
+        link: '/status/',
+      },
+      {
         text: '关于',
         children: ['/about/me.html', '/about/server.html'],
       },

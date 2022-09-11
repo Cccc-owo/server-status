@@ -1,9 +1,9 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
-  import { searchPlugin } from '@vuepress/plugin-search';
 
 export default hopeTheme({
+
   hostname: "https://mcserver.iscccc.eu.org",
 
   author: {

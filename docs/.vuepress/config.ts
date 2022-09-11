@@ -10,4 +10,15 @@ export default defineUserConfig({
   base: "/",
 
   theme,
+
+  plugins: [
+    searchPlugin({
+      locales: {
+        "/": {
+          placeholder: "搜索",
+        },
+      },
+    }),
+  ],
+
 });

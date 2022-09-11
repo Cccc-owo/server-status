@@ -1,6 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
+  import { searchPlugin } from '@vuepress/plugin-search';
 
 export default hopeTheme({
   hostname: "https://mcserver.iscccc.eu.org",
@@ -15,30 +16,23 @@ export default hopeTheme({
   logo: "/images/icon.png",
 
   repo: "Cccc-owo/server-status",
+  repoLabel: "GitHub",
 
   docsDir: "docs/",
-  
+  docsBranch: "new",
   docsRepo: "Cccc-owo/server-status",
 
   // navbar
   navbar: navbar,
 
   // sidebar
-  sidebar: sidebar,
+  sidebar: "heading",
 
   footer: "你好啊~",
 
   displayFooter: true,
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
-
-  //blog: {
-  //  description: "一个前端开发者",
-  //  intro: "/intro.html",
-  //  medias: {
-  //    Baidu: "https://example.com",
-  //  },
-  //},
+  pageInfo: ["Author", "Original"],
 
   encrypt: {
     config: {
@@ -47,34 +41,29 @@ export default hopeTheme({
   },
 
   plugins: {
-  //  blog: {
-  //    autoExcerpt: true,
-  //  },
-
-    // 如果你不需要评论，可以直接删除 comment 配置，
-    // 以下配置仅供体验，如果你需要评论，请自行配置并使用自己的环境，详见文档。
-    // 为了避免打扰主题开发者以及消耗他的资源，请不要在你的正式环境中直接使用下列配置!!!!!
+    blog: false,
+    copyCode: {},
     comment: {
       /**
        * Using Giscus
        */
       //provider: "Giscus",
-      //repo: "vuepress-theme-hope/giscus-discussions",
-      //repoId: "R_kgDOG_Pt2A",
+      //repo: "username/repo",
+      //repoId: "xxxx",
       //category: "Announcements",
-      //categoryId: "DIC_kwDOG_Pt2M4COD69",
+      //categoryId: "xxxx",
    
       /**
        * Using Twikoo
        */
       // provider: "Twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
+      // envId: "https://yourwebsite.app",
 
       /**
        * Using Waline
        */
-      // provider: "Waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
+      //provider: "Waline",
+      //serverURL: "https://yourwebsite.app",
     },
 
     mdEnhance: {

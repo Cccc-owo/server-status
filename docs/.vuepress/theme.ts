@@ -62,8 +62,8 @@ export default hopeTheme({
       /**
        * Using Waline
        */
-      //provider: "Waline",
-      //serverURL: "https://yourwebsite.app",
+      provider: "Waline",
+      serverURL: "https://yqsg-comment.iscccc.eu.org/",
     },
 
     mdEnhance: {

@@ -12,6 +12,11 @@ export default navbar([
     link: "/status",
   },
   {
+    text: "评论区",
+    icon: "comment",
+    link: "/comment",
+  },
+  {
     text: "关于",
     icon: "creative",
     prefix: "/about/",

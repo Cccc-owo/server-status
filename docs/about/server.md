@@ -38,7 +38,65 @@ description: "关于服务器"
 
 ## 游戏内截图
 
-详情见[此](https://imgtu.com/album/fPm5Q)。
+<details><summary>点我展开</summary>
+
+![](/images/in-game-screenshot/vFsLvV.png)
+
+![](/images/in-game-screenshot/vFsXuT.png)
+
+![](/images/in-game-screenshot/vFsjDU.png)
+
+![](/images/in-game-screenshot/vFsqg0.png)
+
+![](/images/in-game-screenshot/vFsvbF.png)
+
+![](/images/in-game-screenshot/vFySUJ.png)
+
+![](/images/in-game-screenshot/vFyCCR.png)
+
+![](/images/in-game-screenshot/vFszE4.png)
+
+![](/images/in-game-screenshot/vFy3Kf.png)
+
+![](/images/in-game-screenshot/vFy8r8.png)
+
+![](/images/in-game-screenshot/vFyAKK.png)
+
+![](/images/in-game-screenshot/vFyEDO.png)
+
+![](/images/in-game-screenshot/vFyeVe.png)
+
+![](/images/in-game-screenshot/vFyFv6.png)
+
+![](/images/in-game-screenshot/vFyigx.png)
+
+![](/images/in-game-screenshot/vFymUH.png)
+
+![](/images/in-game-screenshot/vFyp59.png)
+
+![](/images/in-game-screenshot/vFyP81.png)
+
+![](/images/in-game-screenshot/vFyQ2t.png)
+
+![](/images/in-game-screenshot/vFyVbD.png)
+
+![](/images/in-game-screenshot/vFyYVg.png)
+
+![](/images/in-game-screenshot/vFyGqS.png)
+
+![](/images/in-game-screenshot/vFyrrT.png)
+
+![](/images/in-game-screenshot/vFyw2q.png)
+
+![](/images/in-game-screenshot/vFyaPs.png)
+
+![](/images/in-game-screenshot/vFy0x0.png)
+
+![](/images/in-game-screenshot/vFyN5j.png)
+
+![](/images/in-game-screenshot/vFydGn.png)
+
+</details>
 
 ## 宣传片
 

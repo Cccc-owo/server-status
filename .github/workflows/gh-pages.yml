@@ -1,0 +1,37 @@
+name: Deploy in GitHub Page
+
+on:
+  push:
+    branches:
+      - new
+      
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.1.0
+      - name: Yarn Setup
+        uses: DerYeger/yarn-setup-action@v1.0.1
+      - name: Setup Node.js
+        uses: actions/setup-node@v3.5.1
+        with:
+          node-version: 18
+          cache: yarn
+      - name: Build project
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: yarn vuepress build docs
+      - name: Deploy to gh pages
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          repository-name: Cccc-owo/server-status
+          branch: gh-pages
+          folder: docs/.vuepress/dist
+          token: ${{ secrets.GITHUB_TOKEN }}
+          single-commit: true

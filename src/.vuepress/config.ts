@@ -12,8 +12,5 @@ export default defineUserConfig({
 
   theme,
 
-  plugins: [
-    
-  ],
-
+  shouldPrefetch: false,
 });

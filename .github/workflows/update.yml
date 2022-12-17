@@ -17,21 +17,31 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3.0.2
-    - name: Yarn Setup
-      uses: DerYeger/yarn-setup-action@v1.0.1
-      with:
-        node-version: 16 
-    - name: Install Dependencies
-      run: yarn
-    - name: Update Dependencies
-      run: |
-        yarn upgrade
-        yarn
-    - uses: fregante/setup-git-user@v1.1.0
-    - name: Commit Changes & Push to Remote Branch
-      run: |
-        git add -A
-        git commit -m "chore: update deps"
-        git push -u origin
+      - name: Checkout
+        uses: actions/checkout@v3.2.0
+        with:
+          fetch-depth: 0
+          # 如果你文档需要 Git 子模块，取消注释下一行
+          # submodules: true
+
+      - name: 安装 pnpm
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+          run_install: true
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v3.5.1
+        with:
+          node-version: 18
+          cache: pnpm
+
+      - name: Update
+        run: pnpm add @vuepress/client@next vue vuepress@next vuepress-theme-hope@next && pnpm i && pnpm up
+
+      - uses: fregante/setup-git-user@v1.1.0
+      - name: Commit Changes & Push to Remote Branch
+        run: |
+          git add -A
+          git commit -m "chore: update deps"
+          git push -u origin

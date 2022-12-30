@@ -28,7 +28,7 @@ export default hopeTheme({
   navbar: Navbar,
 
   // sidebar
-  sidebar: Sidebar,
+  sidebar: "structure",
 
   footer: "你好啊~",
 
@@ -85,8 +85,8 @@ export default hopeTheme({
       figure: true,
       flowchart: true,
       gfm: true,
-      imageLazyload: true,
-      imageSize: true,
+      imgLazyload: true,
+      imgSize: true,
       include: true,
       katex: true,
       mark: true,
